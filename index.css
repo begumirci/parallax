@@ -1,0 +1,58 @@
+.content {
+  background-image: url(img2.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+@keyframes circle-in-center {
+  from {
+    clip-path: circle(0%);
+  }
+  to {
+    clip-path: circle(25%);
+  }
+}
+
+.content2 {
+  background-image: url(img1.jpg);
+  width: 100%;
+  height: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content-header:focus {
+  animation: 10s cubic-bezier(0.25, 1, 0.3, 1) circle-in-center;
+}
+
+.content-header {
+  color: white;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  position: absolute;
+  top: 40%;
+  right: 40%;
+}
+
+.Boxes {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 35px;
+  width: 100%;
+}
